@@ -10,28 +10,40 @@ body {
 }
 
 .navbar {
+    position: sticky;
+    z-index: 3;
+    top: 0;
     display: flex;
     position: fixed;
     justify-content: space-between;
-    height: 12vh;
-    width: 100vw;
+    height: 60px;
+    width: 100%;
     background-color: black;
+    align-items: center;
 }
 
 .navbar-logo {
     justify-self: start;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 20px;
     color: white;
-    margin-top: 2vh;
+    margin:5px;
     cursor: pointer;
+}
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.d-flex {
+    margin-right: 40px;
 }
 
 .ver-carrito {
     font-size: 30px;
     margin-right: 40px;
-    margin-top: 3.5vh;
+    margin:5px;
     cursor: pointer;
 }
 
@@ -113,8 +125,9 @@ body {
 /* modal content */
 
 .modal-container {
-    width: 80%;
-    margin: 0 10%;
+    width: 90%;
+    /* margin: 0 10%; */
+    margin-left: 50px;
     max-height: 88vh;
     color: white;
     background-color: black;
@@ -126,6 +139,10 @@ body {
     z-index: 9;
     top: 12vh;
     scrollbar-color: none;
+}
+.modal-content{
+    background-color: black;
+
 }
 
 .modal-content::-webkit-scrollbar {
@@ -153,13 +170,13 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 70%;
+    width: 85%;
     margin: 10px;
 }
 
 .modal-container>div>img {
     height: 120px;
-    width: 120px;
+    width: 85px;
 }
 
 .total-content {
@@ -172,17 +189,20 @@ body {
 .delete-product {
     cursor: pointer;
 }
-
+.carritoNav{
+    margin-right:30px ;
+}
 .cantidad-carrito {
     background-color: red;
     color: white;
     border-radius: 50%;
     font-size: 12px;
     padding: 5px;
-    top: 37px;
-    right: 40px;
+    top: 23px;
+    right: 30px;
     position: absolute;
     display: none;
+    margin-left: 20px;
 }
 
 .sumar {

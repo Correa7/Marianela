@@ -24,12 +24,12 @@ const pintarCarrito = () => {
         carritoContent.className = "modal-content";
         carritoContent.innerHTML = `
                 <img src="${product.img}">
-                <h3>${product.nombre}</h3>
-                <p>$${product.precio}</p>
-                <span class="restar"> - </span>
-                <p>Cantidad: ${product.cantidad}</p>
-                <span class="sumar"> + </span>
-                <p>Total: ${product.cantidad * product.precio}</p>
+                <h5>${product.nombre}</h5>
+                <h5>$${product.precio}</h5>
+                <h5 class="restar"> - </h5>
+                <h5>Cantidad: ${product.cantidad}</h5>
+                <h5 class="sumar"> + </h5>
+                <h5>Total: ${product.cantidad * product.precio}</h5>
                 <span class="delete-product"> ❌ </span>
                 `;
 
