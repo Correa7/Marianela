@@ -41,6 +41,9 @@ const pintarCarrito = () => {
             if (product.cantidad !== 1) {
                 product.cantidad--;
             }
+            tostada("Producto removido del carrito", {
+                background: "linear-gradient(to right,  #e92424,  #da5353)",
+            })
             saveLocal()
             pintarCarrito()
         })
@@ -49,6 +52,9 @@ const pintarCarrito = () => {
 
         sumar.addEventListener("click", () => {
             product.cantidad++;
+            tostada("Producto agregado al carrito", {
+                background: "linear-gradient(to right, #00b09b, #96c93d)",
+              })
             saveLocal()
             pintarCarrito()
         })
@@ -57,6 +63,9 @@ const pintarCarrito = () => {
 
         eliminar.addEventListener("click", () => {
             eliminarProducto(product.id);
+            tostada("Producto eliminado del carrito", {
+                background: "linear-gradient(to right,  #e92424,  #da5353)",
+            })
         })
     });
 
