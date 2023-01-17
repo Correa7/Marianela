@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "producto": "Malbec Rutini",
+        "cantidad": 1,
+        "precio": 6099,
+        "imgUrl": "./img/rutini.jpg"
+    },
+    {
+        "id": 2,
+        "producto": "Malbec Escorihuela   ",
+        "cantidad": 1,
+        "precio": 18499,
+        "imgUrl": "./img/escorihuela_gason.jpg"
+    },
+    {
+        "id": 3,
+        "producto": "Malbec Felino",
+        "cantidad": 1,
+        "precio": 4379,
+        "imgUrl": "./img/felino.jpg"
+    },
+    {
+        "id": 4,
+        "producto": "Blend Catena Zapata",
+        "cantidad": 1,
+        "precio": 11199,
+        "imgUrl": "./img/catena_zapata.jpg"
+    },
+    {
+        "id": 5,
+        "producto": "Sauvignon Blanc Tapiz",
+        "cantidad": 1,
+        "precio": 9899,
+        "imgUrl": "./img/tapiz.jpg"
+    },
+    {
+        "id": 6,
+        "producto": "Chardonnay Piedra Negra",
+        "cantidad": 1,
+        "precio": 1739,
+        "imgUrl": "./img/piedra_negra.jpg"
+    },
+    {
+        "id": 7, 
+        "producto": "Chardonnay Osadia",
+        "cantidad": 1,
+        "precio": 11399,
+        "imgUrl": "./img/osadia_de_crear.jpg"
+    },
+    {
+        "id": 8,
+        "producto": "Espumante Nina",
+        "cantidad": 1,
+        "precio": 5600,
+        "imgUrl": "./img/nina.jpg"
+    },
+    {
+        "id": 9,
+        "producto": "Espumante Norton",
+        "cantidad": 1,
+        "precio": 2200,
+        "imgUrl": "./img/norton.jpg"
+    },
+    {
+        "id": 10,
+        "producto": "Whisky Jim Beam",
+        "cantidad": 1,
+        "precio": 9919,
+        "imgUrl": "./img/jim_beam.jpg"
+    }
+]

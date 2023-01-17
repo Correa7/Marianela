@@ -84,8 +84,10 @@ const eliminarProducto = (id) => {
 
 const carritoCounter = () => {
     cantidadCarrito.style.display = "block";
-
-    const carritoLength = carrito.length;
+    
+    //  para que te renderice las cantidades en el carro del nav
+    const carritoLength = carrito.reduce((a, b) => a + b.cantidad, 0)
+    
 
     localStorage.setItem("carritoLength", JSON.stringify(carritoLength));
 
