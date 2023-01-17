@@ -1,0 +1,194 @@
+body {
+    margin: 0px;
+}
+
+/* navbar */
+.nav-container {
+    position: sticky;
+    z-index: 3;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    height: 12vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.navbar-logo {
+    justify-self: start;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 20px;
+    color: white;
+    margin-top: 2vh;
+    cursor: pointer;
+}
+
+.ver-carrito {
+    font-size: 30px;
+    margin-right: 40px;
+    margin-top: 3.5vh;
+    cursor: pointer;
+}
+
+/* fondo styles */
+
+.fondo {
+    background-size: cover;
+    background-position: center;
+    height: 65vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQUeapVVwUmTQ7Zjx4lvffOfrgGENEh9-rSPwDbov6J_Z9l2yJWxSemTPhUkGLX5vAw");
+    width: 100vw;
+}
+
+.fondo-container {
+    text-align: center;
+    padding: 15% 0;
+}
+
+.fondo h2 {
+    margin: 0;
+    padding-top: 180px;
+    color: white;
+    text-shadow: 1px 1px 3 px rgba(0, 0, 0, 0.2);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+}
+
+/* contenido */
+
+.shop-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+
+.card {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: arial;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 100px 90px;
+}
+
+.card>img {
+    width: 60%;
+    height: 130px;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+/* modal content */
+
+.modal-container {
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+
+.modal-content::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: aliceblue;
+    width: 100%;
+}
+
+.modal-header-title {
+    justify-self: start;
+}
+
+.modal-header-button {
+    cursor: pointer;
+}
+
+.modal-container>.modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.modal-container>div>img {
+    height: 120px;
+    width: 120px;
+}
+
+.total-content {
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.delete-product {
+    cursor: pointer;
+}
+
+.cantidad-carrito {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 5px;
+    top: 37px;
+    right: 40px;
+    position: absolute;
+    display: none;
+}
+
+.sumar {
+    cursor: pointer;
+}
+
+.restar {
+    cursor: pointer;
+}
